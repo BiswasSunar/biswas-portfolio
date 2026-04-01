@@ -1,65 +1,14 @@
 // ============================================================================
-// Theme Toggle - Dark/Light Mode
+// Enforced Dark Theme
 // ============================================================================
 
 /**
- * Initializes theme preference from localStorage and applies it
- * Watches for system color scheme preference if no user preference is set
+ * Forces dark mode on all pages.
  */
 function initializeTheme() {
   const html = document.documentElement;
-  const themeToggleBtn = document.getElementById("theme-toggle");
-
-  // Get saved theme preference from localStorage
-  const savedTheme = localStorage.getItem("theme");
-
-  // Determine initial theme
-  let isDarkMode;
-  if (savedTheme) {
-    isDarkMode = savedTheme === "dark";
-  } else {
-    // Check system preference
-    isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  }
-
-  // Apply theme
-  applyTheme(isDarkMode);
-
-  // Set up toggle button listener
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener("click", () => {
-      const currentMode = html.classList.contains("dark");
-      applyTheme(!currentMode);
-    });
-  }
-}
-
-/**
- * Applies theme to the document and saves preference
- * @param {boolean} isDarkMode - True for dark mode, false for light mode
- */
-function applyTheme(isDarkMode) {
-  const html = document.documentElement;
-  const themeToggleBtn = document.getElementById("theme-toggle");
-
-  if (isDarkMode) {
-    html.classList.add("dark");
-    localStorage.setItem("theme", "dark");
-  } else {
-    html.classList.remove("dark");
-    localStorage.setItem("theme", "light");
-  }
-
-  // Update theme toggle button icon/text
-  if (themeToggleBtn) {
-    const icon = themeToggleBtn.querySelector("svg");
-    if (icon) {
-      icon.setAttribute(
-        "aria-label",
-        isDarkMode ? "Switch to light mode" : "Switch to dark mode",
-      );
-    }
-  }
+  html.classList.add("dark");
+  localStorage.setItem("theme", "dark");
 }
 
 // ============================================================================
@@ -112,21 +61,64 @@ function initializeScrollToTop() {
     return;
   }
 
-  const toggleVisibility = () => {
-    if (window.scrollY > 240) {
-      scrollBtn.classList.remove("hidden");
-    } else {
-      scrollBtn.classList.add("hidden");
-    }
-  };
-
-  window.addEventListener("scroll", toggleVisibility, { passive: true });
   scrollBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
   scrollBtn.dataset.initialized = "true";
-  toggleVisibility();
+}
+
+// ============================================================================
+// Hero Typing Effect (index.html)
+// ============================================================================
+
+function initializeHeroTyping() {
+  const typedHero = document.getElementById("typed-hero");
+  if (!typedHero || typedHero.dataset.initialized === "true") {
+    return;
+  }
+
+  const fullText = typedHero.dataset.text || "Hi, I'm Biswas";
+  let charIndex = 0;
+
+  const tick = () => {
+    charIndex += 1;
+    typedHero.textContent = fullText.slice(0, charIndex);
+
+    if (charIndex < fullText.length) {
+      setTimeout(tick, 95);
+      return;
+    }
+  };
+
+  typedHero.textContent = "";
+  typedHero.dataset.initialized = "true";
+  tick();
+}
+
+// ============================================================================
+// Mobile Navigation Menu
+// ============================================================================
+
+function initializeMobileMenu() {
+  const menuToggleBtn = document.getElementById("mobile-menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (
+    !menuToggleBtn ||
+    !mobileMenu ||
+    menuToggleBtn.dataset.initialized === "true"
+  ) {
+    return;
+  }
+
+  menuToggleBtn.addEventListener("click", () => {
+    const isHidden = mobileMenu.classList.contains("hidden");
+    mobileMenu.classList.toggle("hidden");
+    menuToggleBtn.setAttribute("aria-expanded", isHidden ? "true" : "false");
+  });
+
+  menuToggleBtn.dataset.initialized = "true";
 }
 
 // ============================================================================
@@ -136,12 +128,16 @@ function initializeScrollToTop() {
 document.addEventListener("DOMContentLoaded", () => {
   initializeTheme();
   setActiveNavLink();
+  initializeMobileMenu();
   initializeSmoothScroll();
   initializeScrollToTop();
+  initializeHeroTyping();
 });
 
 document.addEventListener("componentsLoaded", () => {
   initializeTheme();
   setActiveNavLink();
+  initializeMobileMenu();
   initializeScrollToTop();
+  initializeHeroTyping();
 });
