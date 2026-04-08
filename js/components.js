@@ -10,12 +10,8 @@ async function loadComponent(elementId, filePath) {
     const element = document.getElementById(elementId);
     if (element) {
       element.innerHTML = content;
-      // Re-initialize interactive components after loading
       if (elementId === "navbar-container") {
         setActiveNavLink();
-      }
-      if (elementId === "theme-toggle") {
-        initializeTheme();
       }
     }
   } catch (error) {

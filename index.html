@@ -1,399 +1,210 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biswas Sunar</title>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              slate: {
-                50: "#f8fafc",
-                100: "#f1f5f9",
-                200: "#e2e8f0",
-                300: "#cbd5e1",
-                400: "#94a3b8",
-                500: "#64748b",
-                600: "#475569",
-                700: "#334155",
-                800: "#1e293b",
-                900: "#0f172a",
-              },
-            },
-          },
-        },
-      };
-    </script>
-
-    <!-- External Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body
-    class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors duration-300"
-  >
-    <!-- Navbar Container -->
+  <body>
     <div id="navbar-container"></div>
 
-    <!-- Hero Section -->
-    <section
-      class="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 py-20 sm:py-32"
-    >
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <!-- Left Content -->
-          <div class="space-y-6">
-            <h1
-              class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
-            >
-              <span id="typed-hero" data-text="Hi, I'm Bishwash"></span
+    <main class="page-main">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div>
+            <h1 class="hero-title">
+              <span id="typed-hero" data-text="Hi, I'm Biswas"></span
               ><span class="typing-cursor">|</span>
             </h1>
-            <p
-              class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed"
-            >
+            <p>
               I'm a passionate designer and developer creating modern,
               responsive web experiences. With a focus on clean code and
               intuitive design, I build digital solutions that matter.
             </p>
-            <div class="flex flex-wrap gap-4 pt-4">
-              <a
-                href="projects.html"
-                class="inline-flex items-center px-6 py-3 bg-yellow-600 text-slate-900 font-medium rounded-lg hover:bg-yellow-700 dark:hover:bg-yellow-500 transition-colors"
-              >
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="projects.html">
                 View My Work
-                <svg
-                  class="w-4 h-4 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </a>
-              <a
-                href="contact.html"
-                class="inline-flex items-center px-6 py-3 border-2 border-yellow-600 text-yellow-600 dark:text-yellow-400 dark:border-yellow-400 font-medium rounded-lg hover:bg-yellow-50 dark:hover:bg-slate-700 transition-colors"
-              >
-                Get In Touch
-              </a>
+              <a class="btn btn-outline" href="contact.html">Get In Touch</a>
             </div>
           </div>
 
-          <!-- Right Visual Element -->
-          <div class="hidden md:flex items-center justify-center">
-            <div class="relative">
-              <div
-                class="absolute -inset-4 rounded-[2rem] bg-yellow-400/35 dark:bg-yellow-500/25 blur-2xl"
-              ></div>
-              <div
-                class="animated-glow-border relative w-72 lg:w-80 aspect-[4/5] bg-yellow-600/10 dark:bg-yellow-500/10 rounded-3xl overflow-hidden"
-              >
-                <img
-                  src="image.png"
-                  alt="Profile"
-                  class="w-full h-full object-contain"
-                />
+          <div class="hero-image-zone">
+            <div class="hero-image-wrap">
+              <div class="hero-image-frame animated-glow-border">
+                <img src="image.png" alt="Profile" />
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About Preview Section -->
-    <section
-      id="about-section"
-      class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-800/40 scroll-mt-24"
-    >
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          <div class="lg:col-span-2">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4">About</h2>
-            <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-              I build clean, user-focused digital experiences with strong
-              attention to accessibility, performance, and maintainability. My
-              approach combines thoughtful design with practical engineering.
-            </p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div
-                class="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900"
-              >
-                <p class="text-sm text-slate-500 dark:text-slate-400">
-                  Experience
-                </p>
-                <p class="font-semibold">5+ Years</p>
+      <section id="about-section" class="section section-muted">
+        <div class="container preview-grid">
+          <article class="card">
+            <div class="section-header">
+              <h2>About</h2>
+              <p>
+                I build clean, user-focused digital experiences with strong
+                attention to accessibility, performance, and maintainability. My
+                approach combines thoughtful design with practical engineering.
+              </p>
+            </div>
+            <div class="grid-2">
+              <div class="card">
+                <h3>Experience</h3>
+                <p>5+ Years</p>
               </div>
-              <div
-                class="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900"
-              >
-                <p class="text-sm text-slate-500 dark:text-slate-400">Focus</p>
-                <p class="font-semibold">Frontend & Full-stack</p>
+              <div class="card">
+                <h3>Focus</h3>
+                <p>Frontend & Full-stack</p>
               </div>
             </div>
-          </div>
-          <div
-            class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900"
-          >
-            <h3 class="font-semibold mb-3">More Details</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">
-              Read complete background, skills, and philosophy.
-            </p>
-            <a
-              href="about.html"
-              class="inline-flex items-center text-yellow-600 dark:text-yellow-400 font-medium hover:underline"
-              >Open About Page</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured Skills Section -->
-    <section class="py-16 sm:py-24 bg-white dark:bg-slate-900">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Core Skills</h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-12 max-w-2xl">
-          Specialized in creating modern web experiences with focus on user
-          experience and performance.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Skill Card 1 -->
-          <div
-            class="card-hover p-6 border border-slate-200 dark:border-slate-700 rounded-xl bg-slate-50 dark:bg-slate-800"
-          >
-            <div
-              class="w-12 h-12 bg-yellow-100 dark:bg-yellow-900 rounded-lg flex items-center justify-center mb-4"
-            >
-              <svg
-                class="w-6 h-6 text-yellow-600 dark:text-yellow-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M10 20l4-16m4 4l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Frontend Development</h3>
-            <p class="text-slate-600 dark:text-slate-400">
-              HTML, CSS, JavaScript, React, and Tailwind CSS for creating nimble
-              and responsive interfaces.
-            </p>
-          </div>
-
-          <!-- Skill Card 2 -->
-          <div
-            class="card-hover p-6 border border-slate-200 dark:border-slate-700 rounded-xl bg-slate-50 dark:bg-slate-800"
-          >
-            <div
-              class="w-12 h-12 bg-yellow-100 dark:bg-yellow-900 rounded-lg flex items-center justify-center mb-4"
-            >
-              <svg
-                class="w-6 h-6 text-yellow-600 dark:text-yellow-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.5a2 2 0 00-1 .266M7 21H5a2 2 0 01-2-2v-4a2 2 0 012-2h2.5"
-                />
-              </svg>
-            </div>
-            <h3 class="text-lg font-semibold mb-2">UI/UX Design</h3>
-            <p class="text-slate-600 dark:text-slate-400">
-              Designing clean, intuitive interfaces with focus on user needs and
-              accessibility standards.
-            </p>
-          </div>
-
-          <!-- Skill Card 3 -->
-          <div
-            class="card-hover p-6 border border-slate-200 dark:border-slate-700 rounded-xl bg-slate-50 dark:bg-slate-800"
-          >
-            <div
-              class="w-12 h-12 bg-yellow-100 dark:bg-yellow-900 rounded-lg flex items-center justify-center mb-4"
-            >
-              <svg
-                class="w-6 h-6 text-yellow-600 dark:text-yellow-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Performance</h3>
-            <p class="text-slate-600 dark:text-slate-400">
-              Optimized, fast-loading websites with attention to SEO,
-              accessibility, and best practices.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Projects Preview Section -->
-    <section
-      id="projects-section"
-      class="py-16 sm:py-20 bg-white dark:bg-slate-900 scroll-mt-24"
-    >
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-end justify-between gap-4 mb-8">
-          <div>
-            <h2 class="text-3xl sm:text-4xl font-bold mb-2">Projects</h2>
-            <p class="text-slate-600 dark:text-slate-400">
-              Selected work across web apps, UI systems, and dashboards.
-            </p>
-          </div>
-          <a
-            href="projects.html"
-            class="hidden sm:inline-flex items-center text-yellow-600 dark:text-yellow-400 font-medium hover:underline"
-            >View All</a
-          >
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <article
-            class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800"
-          >
-            <h3 class="font-semibold mb-2">E-Commerce Platform</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-400">
-              Scalable storefront with modern UX and secure checkout flows.
-            </p>
           </article>
-          <article
-            class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800"
-          >
-            <h3 class="font-semibold mb-2">Task Management App</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-400">
-              Collaborative workspace with intuitive boards and real-time
-              updates.
-            </p>
-          </article>
-          <article
-            class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800"
-          >
-            <h3 class="font-semibold mb-2">Analytics Dashboard</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-400">
-              Actionable reporting interface designed for speed and clarity.
-            </p>
+
+          <article class="card">
+            <h3>More Details</h3>
+            <p>Read complete background, skills, and philosophy.</p>
+            <p><a class="link-accent" href="about.html">Open About Page</a></p>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Education Preview Section -->
-    <section
-      id="education-section"
-      class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-800/40 scroll-mt-24"
-    >
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl sm:text-4xl font-bold mb-8">Education</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div
-            class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900"
-          >
-            <p
-              class="text-sm text-yellow-700 dark:text-yellow-300 font-medium mb-2"
-            >
-              2018 - 2022
-            </p>
-            <h3 class="font-semibold mb-1">B.Sc. in Computer Science</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-400">
-              Strong foundation in software engineering, UI, and systems design.
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Core Skills</h2>
+            <p class="lead">
+              Specialized in creating modern web experiences with focus on user
+              experience and performance.
             </p>
           </div>
-          <div
-            class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900"
-          >
-            <p
-              class="text-sm text-yellow-700 dark:text-yellow-300 font-medium mb-2"
-            >
-              Certifications
-            </p>
-            <h3 class="font-semibold mb-1">Cloud, UX, and Web Standards</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-400">
-              Continuous upskilling in modern frameworks, accessibility, and
-              performance.
-            </p>
+
+          <div class="grid-3">
+            <article class="card">
+              <h3>Frontend Development</h3>
+              <p>
+                HTML, CSS, JavaScript, React, and Tailwind CSS for creating
+                nimble and responsive interfaces.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>UI/UX Design</h3>
+              <p>
+                Designing clean, intuitive interfaces with focus on user needs
+                and accessibility standards.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Performance</h3>
+              <p>
+                Optimized, fast-loading websites with attention to SEO,
+                accessibility, and best practices.
+              </p>
+            </article>
           </div>
         </div>
-        <div class="mt-6">
-          <a
-            href="education.html"
-            class="inline-flex items-center text-yellow-600 dark:text-yellow-400 font-medium hover:underline"
-            >Open Full Education Page</a
-          >
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact Preview Section -->
-    <section
-      id="contact-section"
-      class="py-16 sm:py-20 bg-white dark:bg-slate-900 scroll-mt-24"
-    >
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div class="lg:col-span-2">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Contact</h2>
-            <p class="text-slate-600 dark:text-slate-300 mb-6">
+      <section id="projects-section" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Projects</h2>
+            <p>Selected work across web apps, UI systems, and dashboards.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="card project-card">
+              <h3>E-Commerce Platform</h3>
+              <p>
+                Scalable storefront with modern UX and secure checkout flows.
+              </p>
+            </article>
+            <article class="card project-card">
+              <h3>Task Management App</h3>
+              <p>
+                Collaborative workspace with intuitive boards and real-time
+                updates.
+              </p>
+            </article>
+            <article class="card project-card">
+              <h3>Analytics Dashboard</h3>
+              <p>
+                Actionable reporting interface designed for speed and clarity.
+              </p>
+            </article>
+          </div>
+
+          <p>
+            <a class="link-accent" href="projects.html">View all projects</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="education-section" class="section section-muted">
+        <div class="container">
+          <div class="section-header">
+            <h2>Education</h2>
+          </div>
+
+          <div class="grid-2">
+            <article class="card">
+              <h3>B.Sc. in Computer Science</h3>
+              <p>2018 - 2022</p>
+              <p>
+                Strong foundation in software engineering, UI, and systems
+                design.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Cloud, UX, and Web Standards</h3>
+              <p>Certifications</p>
+              <p>
+                Continuous upskilling in modern frameworks, accessibility, and
+                performance.
+              </p>
+            </article>
+          </div>
+
+          <p>
+            <a class="link-accent" href="education.html"
+              >Open Full Education Page</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section id="contact-section" class="section">
+        <div class="container grid-2">
+          <article class="card">
+            <h2>Contact</h2>
+            <p>
               Have an idea or project in mind? Let's connect and discuss how we
               can build it.
             </p>
-            <div class="flex flex-wrap gap-3">
-              <a
-                href="mailto:sunarbiswas10@gmail.com"
-                class="px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100"
-                >sunarbiswas10@gmail.com</a
-              >
-              <a
-                href="tel:+9779847625845"
-                class="px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100"
-                >+977-9847625845</a
-              >
-            </div>
-          </div>
-          <div
-            class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800"
-          >
-            <h3 class="font-semibold mb-3">Need the full contact form?</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
-              Use the dedicated page to send complete project details.
-            </p>
-            <a
-              href="contact.html"
-              class="inline-flex items-center px-4 py-2 bg-yellow-600 text-slate-900 rounded-lg font-medium hover:bg-yellow-700 dark:hover:bg-yellow-500 transition-colors"
-              >Open Contact Page</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+            <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+            <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          </article>
 
-    <!-- Footer Container -->
+          <article class="card">
+            <h3>Need the full contact form?</h3>
+            <p>Use the dedicated page to send complete project details.</p>
+            <p>
+              <a class="btn btn-primary" href="contact.html"
+                >Open Contact Page</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
     <div id="footer-container"></div>
 
     <script src="js/components.js"></script>

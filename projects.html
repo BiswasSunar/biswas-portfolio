@@ -1,360 +1,151 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects - Professional Portfolio</title>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              slate: {
-                50: "#f8fafc",
-                100: "#f1f5f9",
-                200: "#e2e8f0",
-                300: "#cbd5e1",
-                400: "#94a3b8",
-                500: "#64748b",
-                600: "#475569",
-                700: "#334155",
-                800: "#1e293b",
-                900: "#0f172a",
-              },
-            },
-          },
-        },
-      };
-    </script>
-
-    <!-- External Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body
-    class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors duration-300"
-  >
-    <!-- Navbar Container -->
+  <body>
     <div id="navbar-container"></div>
 
-    <!-- Page Header -->
-    <section
-      class="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 py-12 sm:py-16 border-b border-slate-200 dark:border-slate-700"
-    >
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl sm:text-5xl font-bold mb-4">Projects</h1>
-        <p class="text-lg text-slate-600 dark:text-slate-300 max-w-2xl">
-          A selection of projects showcasing my expertise in web development and
-          design.
-        </p>
-      </div>
-    </section>
-
-    <!-- Projects Grid -->
-    <section class="py-16 sm:py-24">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Project 1 -->
-          <div
-            class="project-card bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden"
-          >
-            <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600"></div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">E-Commerce Platform</h3>
-              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                Full-stack React application with real-time inventory management
-                and Stripe payment integration.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span
-                  class="px-2.5 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs font-medium rounded"
-                  >React</span
-                >
-                <span
-                  class="px-2.5 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs font-medium rounded"
-                  >Node.js</span
-                >
-                <span
-                  class="px-2.5 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs font-medium rounded"
-                  >MongoDB</span
-                >
-              </div>
-              <div class="flex gap-3">
-                <a
-                  href="#"
-                  class="flex-1 inline-flex items-center justify-center px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 font-medium text-sm transition-colors"
-                >
-                  View Live
-                </a>
-                <a
-                  href="#"
-                  class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-200 dark:hover:bg-blue-800 font-medium text-sm transition-colors"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div
-            class="project-card bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden"
-          >
-            <div
-              class="h-48 bg-gradient-to-br from-green-400 to-green-600"
-            ></div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
-              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                Collaborative task management tool with real-time updates and
-                drag-and-drop interface.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span
-                  class="px-2.5 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 text-xs font-medium rounded"
-                  >Vue.js</span
-                >
-                <span
-                  class="px-2.5 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 text-xs font-medium rounded"
-                  >Firebase</span
-                >
-                <span
-                  class="px-2.5 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 text-xs font-medium rounded"
-                  >Tailwind</span
-                >
-              </div>
-              <div class="flex gap-3">
-                <a
-                  href="#"
-                  class="flex-1 inline-flex items-center justify-center px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 font-medium text-sm transition-colors"
-                >
-                  View Live
-                </a>
-                <a
-                  href="#"
-                  class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-200 dark:hover:bg-green-800 font-medium text-sm transition-colors"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div
-            class="project-card bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden"
-          >
-            <div
-              class="h-48 bg-gradient-to-br from-purple-400 to-purple-600"
-            ></div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Design System</h3>
-              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                Comprehensive component library and design system documentation
-                for enterprise applications.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span
-                  class="px-2.5 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 text-xs font-medium rounded"
-                  >Storybook</span
-                >
-                <span
-                  class="px-2.5 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 text-xs font-medium rounded"
-                  >React</span
-                >
-                <span
-                  class="px-2.5 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 text-xs font-medium rounded"
-                  >Figma</span
-                >
-              </div>
-              <div class="flex gap-3">
-                <a
-                  href="#"
-                  class="flex-1 inline-flex items-center justify-center px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 font-medium text-sm transition-colors"
-                >
-                  View Live
-                </a>
-                <a
-                  href="#"
-                  class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-400 rounded-lg hover:bg-purple-200 dark:hover:bg-purple-800 font-medium text-sm transition-colors"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div
-            class="project-card bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden"
-          >
-            <div
-              class="h-48 bg-gradient-to-br from-orange-400 to-orange-600"
-            ></div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">
-                Content Management System
-              </h3>
-              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                Headless CMS with GraphQL API, static site generation, and cloud
-                deployment.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span
-                  class="px-2.5 py-1 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 text-xs font-medium rounded"
-                  >GraphQL</span
-                >
-                <span
-                  class="px-2.5 py-1 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 text-xs font-medium rounded"
-                  >Next.js</span
-                >
-                <span
-                  class="px-2.5 py-1 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 text-xs font-medium rounded"
-                  >Vercel</span
-                >
-              </div>
-              <div class="flex gap-3">
-                <a
-                  href="#"
-                  class="flex-1 inline-flex items-center justify-center px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 font-medium text-sm transition-colors"
-                >
-                  View Live
-                </a>
-                <a
-                  href="#"
-                  class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-400 rounded-lg hover:bg-orange-200 dark:hover:bg-orange-800 font-medium text-sm transition-colors"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5 -->
-          <div
-            class="project-card bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden"
-          >
-            <div class="h-48 bg-gradient-to-br from-pink-400 to-pink-600"></div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Analytics Dashboard</h3>
-              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                Real-time analytics dashboard with data visualization and custom
-                reporting features.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span
-                  class="px-2.5 py-1 bg-pink-100 dark:bg-pink-900 text-pink-700 dark:text-pink-300 text-xs font-medium rounded"
-                  >Chart.js</span
-                >
-                <span
-                  class="px-2.5 py-1 bg-pink-100 dark:bg-pink-900 text-pink-700 dark:text-pink-300 text-xs font-medium rounded"
-                  >React</span
-                >
-                <span
-                  class="px-2.5 py-1 bg-pink-100 dark:bg-pink-900 text-pink-700 dark:text-pink-300 text-xs font-medium rounded"
-                  >PostgreSQL</span
-                >
-              </div>
-              <div class="flex gap-3">
-                <a
-                  href="#"
-                  class="flex-1 inline-flex items-center justify-center px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 font-medium text-sm transition-colors"
-                >
-                  View Live
-                </a>
-                <a
-                  href="#"
-                  class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-pink-100 dark:bg-pink-900 text-pink-600 dark:text-pink-400 rounded-lg hover:bg-pink-200 dark:hover:bg-pink-800 font-medium text-sm transition-colors"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6 -->
-          <div
-            class="project-card bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden"
-          >
-            <div class="h-48 bg-gradient-to-br from-teal-400 to-teal-600"></div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Mobile App API</h3>
-              <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                RESTful API with authentication, rate limiting, and
-                comprehensive documentation.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span
-                  class="px-2.5 py-1 bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-300 text-xs font-medium rounded"
-                  >Node.js</span
-                >
-                <span
-                  class="px-2.5 py-1 bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-300 text-xs font-medium rounded"
-                  >Express</span
-                >
-                <span
-                  class="px-2.5 py-1 bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-300 text-xs font-medium rounded"
-                  >Docker</span
-                >
-              </div>
-              <div class="flex gap-3">
-                <a
-                  href="#"
-                  class="flex-1 inline-flex items-center justify-center px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 font-medium text-sm transition-colors"
-                >
-                  View Live
-                </a>
-                <a
-                  href="#"
-                  class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-teal-100 dark:bg-teal-900 text-teal-600 dark:text-teal-400 rounded-lg hover:bg-teal-200 dark:hover:bg-teal-800 font-medium text-sm transition-colors"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
+    <main class="page-main">
+      <header class="page-header">
+        <div class="container section-header">
+          <h1>Projects</h1>
+          <p>
+            A selection of projects showcasing my expertise in web development
+            and design.
+          </p>
         </div>
-      </div>
-    </section>
+      </header>
 
-    <!-- CTA Section -->
-    <section
-      class="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800 text-white py-12 sm:py-16"
-    >
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
-          Interested in Working Together?
-        </h2>
-        <p class="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-          I'm always interested in hearing about new projects and opportunities.
-          Let's discuss how I can help.
-        </p>
-        <a
-          href="contact.html"
-          class="inline-flex items-center px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
-        >
-          Start a Project
-          <svg
-            class="w-4 h-4 ml-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M13 7l5 5m0 0l-5 5m5-5H6"
-            />
-          </svg>
-        </a>
-      </div>
-    </section>
+      <section class="section">
+        <div class="container projects-grid">
+          <article class="card project-card">
+            <div class="project-cover cover-blue"></div>
+            <h3>E-Commerce Platform</h3>
+            <p>
+              Full-stack React application with real-time inventory management
+              and Stripe payment integration.
+            </p>
+            <div class="badges">
+              <span class="badge">React</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">MongoDB</span>
+            </div>
+            <p>
+              <a class="link-accent" href="#">View Live</a> |
+              <a class="link-accent" href="#">GitHub</a>
+            </p>
+          </article>
 
-    <!-- Footer Container -->
+          <article class="card project-card">
+            <div class="project-cover cover-green"></div>
+            <h3>Task Management App</h3>
+            <p>
+              Collaborative task management tool with real-time updates and
+              drag-and-drop interface.
+            </p>
+            <div class="badges">
+              <span class="badge">Vue.js</span>
+              <span class="badge">Firebase</span>
+              <span class="badge">Tailwind</span>
+            </div>
+            <p>
+              <a class="link-accent" href="#">View Live</a> |
+              <a class="link-accent" href="#">GitHub</a>
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-cover cover-purple"></div>
+            <h3>Design System</h3>
+            <p>
+              Comprehensive component library and design system documentation
+              for enterprise applications.
+            </p>
+            <div class="badges">
+              <span class="badge">Storybook</span>
+              <span class="badge">React</span>
+              <span class="badge">Figma</span>
+            </div>
+            <p>
+              <a class="link-accent" href="#">View Live</a> |
+              <a class="link-accent" href="#">GitHub</a>
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-cover cover-orange"></div>
+            <h3>Content Management System</h3>
+            <p>
+              Headless CMS with GraphQL API, static site generation, and cloud
+              deployment.
+            </p>
+            <div class="badges">
+              <span class="badge">GraphQL</span>
+              <span class="badge">Next.js</span>
+              <span class="badge">Vercel</span>
+            </div>
+            <p>
+              <a class="link-accent" href="#">View Live</a> |
+              <a class="link-accent" href="#">GitHub</a>
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-cover cover-pink"></div>
+            <h3>Analytics Dashboard</h3>
+            <p>
+              Real-time analytics dashboard with data visualization and custom
+              reporting features.
+            </p>
+            <div class="badges">
+              <span class="badge">Chart.js</span>
+              <span class="badge">React</span>
+              <span class="badge">PostgreSQL</span>
+            </div>
+            <p>
+              <a class="link-accent" href="#">View Live</a> |
+              <a class="link-accent" href="#">GitHub</a>
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-cover cover-teal"></div>
+            <h3>Mobile App API</h3>
+            <p>
+              RESTful API backend for a cross-platform mobile application with
+              secure authentication.
+            </p>
+            <div class="badges">
+              <span class="badge">Node.js</span>
+              <span class="badge">Express</span>
+              <span class="badge">JWT</span>
+            </div>
+            <p>
+              <a class="link-accent" href="#">View Live</a> |
+              <a class="link-accent" href="#">GitHub</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container card">
+          <h2>Interested in Working Together?</h2>
+          <p>
+            I'm always interested in hearing about new projects and
+            opportunities. Let's discuss how I can help.
+          </p>
+          <p>
+            <a class="btn btn-primary" href="contact.html">Start a Project</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
     <div id="footer-container"></div>
 
     <script src="js/components.js"></script>

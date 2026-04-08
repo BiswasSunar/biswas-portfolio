@@ -1,353 +1,154 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About - Professional Portfolio</title>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              slate: {
-                50: "#f8fafc",
-                100: "#f1f5f9",
-                200: "#e2e8f0",
-                300: "#cbd5e1",
-                400: "#94a3b8",
-                500: "#64748b",
-                600: "#475569",
-                700: "#334155",
-                800: "#1e293b",
-                900: "#0f172a",
-              },
-            },
-          },
-        },
-      };
-    </script>
-
-    <!-- External Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body
-    class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors duration-300"
-  >
-    <!-- Navbar Container -->
+  <body>
     <div id="navbar-container"></div>
 
-    <!-- Page Header -->
-    <section
-      class="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 py-12 sm:py-16 border-b border-slate-200 dark:border-slate-700"
-    >
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl sm:text-5xl font-bold mb-4">About Me</h1>
-        <p class="text-lg text-slate-600 dark:text-slate-300 max-w-2xl">
-          Creative developer focused on building performant, accessible web
-          experiences.
-        </p>
-      </div>
-    </section>
+    <main class="page-main">
+      <header class="page-header">
+        <div class="container section-header">
+          <h1>About Me</h1>
+          <p>
+            Creative developer focused on building performant, accessible web
+            experiences.
+          </p>
+        </div>
+      </header>
 
-    <!-- About Content -->
-    <section class="py-16 sm:py-24">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Bio Section -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-          <div class="md:col-span-2">
-            <h2 class="text-3xl font-bold mb-6">Who I Am</h2>
-            <div
-              class="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed"
-            >
-              <p>
-                I'm a designer and developer with a passion for creating digital
-                experiences that are both beautiful and functional. With over 5
-                years of experience in web development and UI/UX design, I've
-                had the privilege of working on projects across various
-                industries.
-              </p>
-              <p>
-                My journey in tech started with a curiosity about how things
-                work. What began as tinkering with HTML quickly evolved into a
-                full-stack passion for creating elegant solutions to complex
-                problems. I believe that great design is invisible—it should
-                feel natural and intuitive.
-              </p>
-              <p>
-                When I'm not coding or designing, you'll find me exploring new
-                technologies, contributing to open-source projects, or writing
-                about web development on my blog.
-              </p>
-            </div>
-          </div>
+      <section class="section">
+        <div class="container grid-3">
+          <article class="card span-2">
+            <h2>Who I Am</h2>
+            <p>
+              I'm a designer and developer with a passion for creating digital
+              experiences that are both beautiful and functional. With over 5
+              years of experience in web development and UI/UX design, I've had
+              the privilege of working on projects across various industries.
+            </p>
+            <p>
+              My journey in tech started with a curiosity about how things work.
+              What began as tinkering with HTML quickly evolved into a
+              full-stack passion for creating elegant solutions to complex
+              problems.
+            </p>
+            <p>
+              When I'm not coding or designing, you'll find me exploring new
+              technologies, contributing to open-source projects, or writing
+              about web development on my blog.
+            </p>
+          </article>
 
-          <div
-            class="bg-slate-100 dark:bg-slate-800 rounded-xl p-8 border border-slate-200 dark:border-slate-700 h-fit"
-          >
-            <h3 class="font-bold mb-4 text-slate-900 dark:text-slate-50">
-              Quick Facts
-            </h3>
-            <ul class="space-y-3 text-slate-600 dark:text-slate-300 text-sm">
-              <li class="flex gap-3">
-                <span class="font-semibold text-blue-600 dark:text-blue-400"
-                  >Experience:</span
-                >
-                <span>5+ years</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="font-semibold text-blue-600 dark:text-blue-400"
-                  >Focus:</span
-                >
-                <span>Frontend & Full-stack</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="font-semibold text-blue-600 dark:text-blue-400"
-                  >Location:</span
-                >
-                <span>Remote / Global</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="font-semibold text-blue-600 dark:text-blue-400"
-                  >Availability:</span
-                >
-                <span>Open to projects</span>
-              </li>
+          <aside class="card">
+            <h3>Quick Facts</h3>
+            <ul>
+              <li>Experience: 5+ years</li>
+              <li>Focus: Frontend & Full-stack</li>
+              <li>Location: Remote / Global</li>
+              <li>Availability: Open to projects</li>
             </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-header">
+            <h2>Technical Skills</h2>
+          </div>
+
+          <div class="grid-2">
+            <article class="card">
+              <h3>Frontend</h3>
+              <div class="badges">
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS3</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">React</span>
+                <span class="badge">Tailwind CSS</span>
+                <span class="badge">Vue.js</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Backend</h3>
+              <div class="badges">
+                <span class="badge">Node.js</span>
+                <span class="badge">Express</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">Firebase</span>
+                <span class="badge">GraphQL</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Tools & Platforms</h3>
+              <div class="badges">
+                <span class="badge">Git</span>
+                <span class="badge">GitHub</span>
+                <span class="badge">Figma</span>
+                <span class="badge">VS Code</span>
+                <span class="badge">Docker</span>
+                <span class="badge">Webpack</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Design & Other</h3>
+              <div class="badges">
+                <span class="badge">UI Design</span>
+                <span class="badge">UX Research</span>
+                <span class="badge">Wireframing</span>
+                <span class="badge">Prototyping</span>
+                <span class="badge">Accessibility</span>
+                <span class="badge">SEO</span>
+              </div>
+            </article>
           </div>
         </div>
+      </section>
 
-        <!-- Skills Section -->
-        <div class="mb-20">
-          <h2 class="text-3xl font-bold mb-12">Technical Skills</h2>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Frontend -->
-            <div>
-              <h3
-                class="text-lg font-semibold mb-4 text-slate-900 dark:text-slate-50"
-              >
-                Frontend
-              </h3>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-2 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium"
-                  >HTML5</span
-                >
-                <span
-                  class="px-3 py-2 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium"
-                  >CSS3</span
-                >
-                <span
-                  class="px-3 py-2 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium"
-                  >JavaScript</span
-                >
-                <span
-                  class="px-3 py-2 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium"
-                  >React</span
-                >
-                <span
-                  class="px-3 py-2 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium"
-                  >Tailwind CSS</span
-                >
-                <span
-                  class="px-3 py-2 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium"
-                  >Vue.js</span
-                >
-              </div>
-            </div>
-
-            <!-- Backend -->
-            <div>
-              <h3
-                class="text-lg font-semibold mb-4 text-slate-900 dark:text-slate-50"
-              >
-                Backend
-              </h3>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-lg text-sm font-medium"
-                  >Node.js</span
-                >
-                <span
-                  class="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-lg text-sm font-medium"
-                  >Express</span
-                >
-                <span
-                  class="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-lg text-sm font-medium"
-                  >MongoDB</span
-                >
-                <span
-                  class="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-lg text-sm font-medium"
-                  >PostgreSQL</span
-                >
-                <span
-                  class="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-lg text-sm font-medium"
-                  >Firebase</span
-                >
-                <span
-                  class="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-lg text-sm font-medium"
-                  >GraphQL</span
-                >
-              </div>
-            </div>
-
-            <!-- Tools & Platforms -->
-            <div>
-              <h3
-                class="text-lg font-semibold mb-4 text-slate-900 dark:text-slate-50"
-              >
-                Tools & Platforms
-              </h3>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-2 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-lg text-sm font-medium"
-                  >Git</span
-                >
-                <span
-                  class="px-3 py-2 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-lg text-sm font-medium"
-                  >GitHub</span
-                >
-                <span
-                  class="px-3 py-2 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-lg text-sm font-medium"
-                  >Figma</span
-                >
-                <span
-                  class="px-3 py-2 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-lg text-sm font-medium"
-                  >VS Code</span
-                >
-                <span
-                  class="px-3 py-2 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-lg text-sm font-medium"
-                  >Docker</span
-                >
-                <span
-                  class="px-3 py-2 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-lg text-sm font-medium"
-                  >Webpack</span
-                >
-              </div>
-            </div>
-
-            <!-- Design -->
-            <div>
-              <h3
-                class="text-lg font-semibold mb-4 text-slate-900 dark:text-slate-50"
-              >
-                Design & Other
-              </h3>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-2 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-lg text-sm font-medium"
-                  >UI Design</span
-                >
-                <span
-                  class="px-3 py-2 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-lg text-sm font-medium"
-                  >UX Research</span
-                >
-                <span
-                  class="px-3 py-2 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-lg text-sm font-medium"
-                  >Wireframing</span
-                >
-                <span
-                  class="px-3 py-2 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-lg text-sm font-medium"
-                  >Prototyping</span
-                >
-                <span
-                  class="px-3 py-2 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-lg text-sm font-medium"
-                  >Accessibility</span
-                >
-                <span
-                  class="px-3 py-2 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-lg text-sm font-medium"
-                  >SEO</span
-                >
-              </div>
-            </div>
+      <section class="section">
+        <div class="container card">
+          <h2>My Approach</h2>
+          <div class="grid-2">
+            <article>
+              <h3>User-Centric</h3>
+              <p>Every decision is made with the end-user in mind.</p>
+            </article>
+            <article>
+              <h3>Performance First</h3>
+              <p>Fast and accessible applications are non-negotiable.</p>
+            </article>
+            <article>
+              <h3>Clean Code</h3>
+              <p>Readable, maintainable code is an investment in the future.</p>
+            </article>
+            <article>
+              <h3>Continuous Learning</h3>
+              <p>Technology evolves constantly. I keep evolving with it.</p>
+            </article>
           </div>
         </div>
+      </section>
 
-        <!-- Philosophy -->
-        <div
-          class="bg-slate-50 dark:bg-slate-800 rounded-xl p-8 sm:p-12 border border-slate-200 dark:border-slate-700 mb-20"
-        >
-          <h2 class="text-2xl font-bold mb-6">My Approach</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 class="font-semibold text-blue-600 dark:text-blue-400 mb-2">
-                User-Centric
-              </h3>
-              <p class="text-slate-600 dark:text-slate-300 text-sm">
-                Every decision is made with the end-user in mind. I combine
-                research, testing, and iteration to create experiences that
-                genuinely solve problems.
-              </p>
-            </div>
-            <div>
-              <h3 class="font-semibold text-blue-600 dark:text-blue-400 mb-2">
-                Performance First
-              </h3>
-              <p class="text-slate-600 dark:text-slate-300 text-sm">
-                Fast, responsive applications are non-negotiable. I optimize for
-                speed, accessibility, and SEO from the ground up.
-              </p>
-            </div>
-            <div>
-              <h3 class="font-semibold text-blue-600 dark:text-blue-400 mb-2">
-                Clean Code
-              </h3>
-              <p class="text-slate-600 dark:text-slate-300 text-sm">
-                Readable, maintainable code is an investment in the future. I
-                follow best practices and standards for longevity.
-              </p>
-            </div>
-            <div>
-              <h3 class="font-semibold text-blue-600 dark:text-blue-400 mb-2">
-                Continuous Learning
-              </h3>
-              <p class="text-slate-600 dark:text-slate-300 text-sm">
-                Technology evolves constantly. I stay updated with trends and
-                emerging technologies to deliver modern solutions.
-              </p>
-            </div>
-          </div>
+      <section class="section section-muted">
+        <div class="container card">
+          <h2>Let's Work Together</h2>
+          <p>
+            Interested in collaborating? I'm always excited to discuss new
+            projects and opportunities.
+          </p>
+          <p><a class="btn btn-primary" href="contact.html">Get In Touch</a></p>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- CTA Section -->
-    <section
-      class="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800 text-white py-12 sm:py-16"
-    >
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Let's Work Together</h2>
-        <p class="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-          Interested in collaborating? I'm always excited to discuss new
-          projects and opportunities.
-        </p>
-        <a
-          href="contact.html"
-          class="inline-flex items-center px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
-        >
-          Get In Touch
-          <svg
-            class="w-4 h-4 ml-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M13 7l5 5m0 0l-5 5m5-5H6"
-            />
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <!-- Footer Container -->
     <div id="footer-container"></div>
 
     <script src="js/components.js"></script>

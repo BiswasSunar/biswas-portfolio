@@ -113,8 +113,8 @@ function initializeMobileMenu() {
   }
 
   menuToggleBtn.addEventListener("click", () => {
-    const isHidden = mobileMenu.classList.contains("hidden");
-    mobileMenu.classList.toggle("hidden");
+    const isHidden = mobileMenu.hidden;
+    mobileMenu.hidden = !isHidden;
     menuToggleBtn.setAttribute("aria-expanded", isHidden ? "true" : "false");
   });
 
